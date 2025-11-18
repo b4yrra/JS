@@ -138,3 +138,21 @@ let weekName;
 // } else {
 //   console.log("Ylgaatai");
 // }
+
+// const a = 50;
+// if (a > 100) {
+//   console.log("100-aas ih");
+// } else if (a < 0) {
+//   console.log("0-ees baga");
+// }
+
+// const a = "A";
+// const b = "A";
+
+// if (a === b) {
+//   console.log("Hoyr temdegt ijil");
+// } else {
+//   console.log("Hoyr temdegt uur");
+// }
+
+let a = 82;
