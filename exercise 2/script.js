@@ -130,11 +130,11 @@ let weekName;
 //   console.log("10-aas baga");
 // }
 
-const a = 10;
-const b = 11;
+// const a = 10;
+// const b = 11;
 
-if (a === b) {
-  console.log("Tentsuu");
-} else {
-  console.log("Ylgaatai");
-}
+// if (a === b) {
+//   console.log("Tentsuu");
+// } else {
+//   console.log("Ylgaatai");
+// }
