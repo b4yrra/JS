@@ -154,5 +154,3 @@ let weekName;
 // } else {
 //   console.log("Hoyr temdegt uur");
 // }
-
-let a = 82;
