@@ -206,15 +206,15 @@
 // }
 // console.log(result);
 
-// let i = 1;
-// result = 1;
-// n = 10;
+let i = 1;
+result = 1;
+n = 10;
 
-// while (i <= n) {
-//   result = result * i - 1;
-//   i++;
-// }
-// console.log(result);
+while (i <= n) {
+  result = result * i - 1;
+  i++;
+}
+console.log(result);
 
 // let i = 10;
 

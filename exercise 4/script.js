@@ -66,3 +66,61 @@ function firstItem(arr) {
 
 const element = firstItem("Item");
 console.log(element);
+
+let sumNum = 0;
+
+function sumArray(arr) {
+  for (const num of arr) {
+    sumNum += num;
+  }
+
+  return sumNum;
+}
+
+const numbers = sumArray([1, 2, 3, 4, 5]);
+console.log(numbers);
+
+function reverseString(str) {
+  return str.split("").reverse().join("");
+}
+
+const paragraph = reverseString("apple", "mango");
+console.log(paragraph);
+
+function maxInArray(arr) {
+  return Math.max(...arr);
+}
+
+const nums = maxInArray([1, 2, 3, 4, 5]);
+console.log(nums);
+
+function capital(word) {
+  return word.charAt(0).toUpperCase() + word.slice(1);
+}
+
+const wordOne = capital("bataa");
+console.log(wordOne);
+
+let i = 1;
+result = 1;
+
+function factorial(n) {
+  while (i <= n) {
+    result = result * i - 1;
+    i++;
+  }
+
+  return result;
+}
+
+const facetorialNum = factorial(10);
+console.log(result);
+
+function lastItem(arr) {
+  return arr.split("").pop();
+}
+
+const Item = lastItem("bataa");
+console.log(Item);
+
+function countOccurennces(arr, item) {}
