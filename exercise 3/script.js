@@ -215,3 +215,46 @@
 //   i++;
 // }
 // console.log(result);
+
+// let i = 10;
+
+// while (i >= 1) {
+//   console.log(i);
+//   i--;
+// }
+
+// let i = 0;
+// let n = 3;
+
+// while (i <= 10) {
+//   console.log("n*i=", n * i);
+//   i++;
+// }
+
+// let num = 2;
+// let n = 5;
+// console.log(num ** n);
+
+// let num = 234;
+// let digit;
+// let sum = 0;
+// count = 0;
+
+// while (num > 0) {
+//   digit = num % 10;
+//   num = (num - digit) / 10;
+//   sum += digit;
+//   count++;
+// }
+
+// // console.log("Count", sum);
+// console.log(count);
+
+// let count = 0;
+// let number = 987654;
+
+// while (count === number.lengt. h) {
+//   count++;
+// }
+
+// console.log(count);
