@@ -162,21 +162,38 @@ function countOccurrences(arr, item) {
 const currences = [10, 20, 30, 10, 10];
 const result4 = countOccurrences(currences, 10);
 console.log(result4);
+//======================================
 
 function shortestWord(str) {
   const stringArray = str.split(" ");
-  let shortestWord = "";
-  let shortestLength = stringArray[0].length;
+  let shortestLength = Infinity; // Start with a very large length
+  const shortestWords = [];
 
   for (let i = 0; i < stringArray.length; i++) {
-    if (stringArray[i].length === shortestLength) {
-      shortestLength = stringArray[i].length;
-      shortestWord = stringArray[i];
+    const wordLength = stringArray[i].length;
+
+    if (wordLength < shortestLength) {
+      shortestLength = wordLength;
+      console.log(shortestLength, "shortestLength");
+
+      shortestWords.length = 0; // Clear the array
+      shortestWords.push(stringArray[i]); // Add the new shortest word
+      console.log(shortestWords, "shortestWords");
+    }
+    // If the word length matches the shortest length, add it to the array
+    else if (wordLength === shortestLength) {
+      shortestWords.push(stringArray[i]);
+      console.log(shortestWords, "eq");
     }
   }
-  return shortestWord;
+
+  // Join the array into a string if multiple shortest words are found
+  const result = shortestWords.join(" ");
+  console.log(shortestWords); // Log the array of shortest words
+  console.log(result); // Log the result
+  return result; // Return the shortest word(s)
 }
 
-const phrase = "I am batbold ?";
+const phrase = "hello my name is same as sa";
 const result5 = shortestWord(phrase);
 console.log(result5);
