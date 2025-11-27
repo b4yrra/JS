@@ -169,7 +169,7 @@ function shortestWord(str) {
   let shortestLength = stringArray[0].length;
 
   for (let i = 0; i < stringArray.length; i++) {
-    if (stringArray[i].length > shortestLength) {
+    if (stringArray[i].length === shortestLength) {
       shortestLength = stringArray[i].length;
       shortestWord = stringArray[i];
     }
