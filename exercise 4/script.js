@@ -163,6 +163,15 @@ const result4 = countOccurrences(currences, 10);
 console.log(result4);
 
 function shortestWord(str) {
-  if (shortestWord === 0) {
+  let stringArray = str.split("");
+  let shortestWord;
+  let shortestLength = stringArray[0].length;
+
+  for (let i = 0; i < shortestLength; i++) {
+    if (stringArray[i] < shortestLength) {
+      shortestLength = stringArray[i].length;
+      shortestWord = stringArray[i];
+    }
   }
+  return shortestWord;
 }
