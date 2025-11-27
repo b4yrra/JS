@@ -138,7 +138,8 @@ function isPalindrome(str) {
 }
 
 const functionNum = "23492";
-console.log(isPalindrome(functionNum));
+const result6 = isPalindrome(functionNum);
+console.log(result6);
 
 function lastItem(arr) {
   return arr.pop();
@@ -154,8 +155,8 @@ function countOccurrences(arr, item) {
     if (arr[i] === item) {
       counter++;
     }
-    return counter;
   }
+  return counter;
 }
 
 const currences = [10, 20, 30, 10, 10];
@@ -163,15 +164,19 @@ const result4 = countOccurrences(currences, 10);
 console.log(result4);
 
 function shortestWord(str) {
-  let stringArray = str.split("");
-  let shortestWord;
+  const stringArray = str.split(" ");
+  let shortestWord = "";
   let shortestLength = stringArray[0].length;
 
-  for (let i = 0; i < shortestLength; i++) {
-    if (stringArray[i] < shortestLength) {
+  for (let i = 0; i < stringArray.length; i++) {
+    if (stringArray[i].length > shortestLength) {
       shortestLength = stringArray[i].length;
       shortestWord = stringArray[i];
     }
   }
   return shortestWord;
 }
+
+const phrase = "I am batbold ?";
+const result5 = shortestWord(phrase);
+console.log(result5);
