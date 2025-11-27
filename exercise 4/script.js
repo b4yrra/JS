@@ -1,71 +1,71 @@
-function sum(a, b) {
-  return a + b;
-}
+// function sum(a, b) {
+//   return a + b;
+// }
 
-const number = sum(4, 6);
-console.log(number);
+// const number = sum(4, 6);
+// console.log(number);
 
-function numberSquare(n) {
-  return n ** 2;
-}
+// function numberSquare(n) {
+//   return n ** 2;
+// }
 
-const square = numberSquare(6);
-console.log(square);
+// const square = numberSquare(6);
+// console.log(square);
 
-function isEven(o) {
-  return o % 2;
-}
+// function isEven(o) {
+//   return o % 2;
+// }
 
-const even = isEven(5);
-if (even === 0) {
-  console.log("Tegsh");
-} else {
-  console.log("Sondgoi");
-}
+// const even = isEven(5);
+// if (even === 0) {
+//   console.log("Tegsh");
+// } else {
+//   console.log("Sondgoi");
+// }
 
-function greet(name) {
-  return name;
-}
+// function greet(name) {
+//   return name;
+// }
 
-const ner = greet("Batbold");
-console.log("Hello, ", ner, "!");
+// const ner = greet("Batbold");
+// console.log("Hello, ", ner, "!");
 
-function maxOfTwo(a, b) {
-  return Math.max(a, b);
-}
+// function maxOfTwo(a, b) {
+//   return Math.max(a, b);
+// }
 
-const value = maxOfTwo(5, 6);
-console.log(value);
+// const value = maxOfTwo(5, 6);
+// console.log(value);
 
-function getLength(arr) {
-  return arr.length;
-}
+// function getLength(arr) {
+//   return arr.length;
+// }
 
-const word = getLength("bataaaaaaa");
-console.log(word);
+// const word = getLength("bataaaaaaa");
+// console.log(word);
 
-function toUpper(str) {
-  return str.toUpperCase();
-}
+// function toUpper(str) {
+//   return str.toUpperCase();
+// }
 
-const wordy = toUpper("asdfghjkl");
-console.log(wordy);
+// const wordy = toUpper("asdfghjkl");
+// console.log(wordy);
 
-function isPositive(l) {
-  if (l > 0) {
-    console.log("true");
-  } else {
-    console.log("false");
-  }
-}
-const num = isPositive(1);
+// function isPositive(l) {
+//   if (l > 0) {
+//     console.log("true");
+//   } else {
+//     console.log("false");
+//   }
+// }
+// const num = isPositive(1);
 
-function firstItem(arr) {
-  return arr.slice(0, 1);
-}
+// function firstItem(arr) {
+//   return arr.slice(0, 1);
+// }
 
-const element = firstItem("Item");
-console.log(element);
+// const element = firstItem("Item");
+// console.log(element);
 
 let sumNum = 0;
 
@@ -88,11 +88,23 @@ const paragraph = reverseString("apple", "mango");
 console.log(paragraph);
 
 function maxInArray(arr) {
-  return Math.max(...arr);
+  let max = 0;
+  let i = 0;
+
+  while (i === 0) {
+    i < arr.length;
+    i++;
+    const number = arr[i];
+    if (number > max) {
+      max = number;
+    }
+  }
+  return max;
 }
 
-const nums = maxInArray([1, 2, 3, 4, 5]);
-console.log(nums);
+const nums = [2, 3];
+const result1 = maxInArray(nums);
+console.log(result1);
 
 function capital(word) {
   return word.charAt(0).toUpperCase() + word.slice(1);
@@ -116,11 +128,41 @@ function factorial(n) {
 const facetorialNum = factorial(10);
 console.log(result);
 
-function lastItem(arr) {
-  return arr.split("").pop();
+function isPalindrome(str) {
+  let num2 = str.length - 1;
+  if (str[0] === str[num2]) {
+    console.log("TRUE");
+  } else {
+    console.log("FALSE");
+  }
 }
 
-const Item = lastItem("bataa");
-console.log(Item);
+const functionNum = "23492";
+console.log(isPalindrome(functionNum));
 
-function countOccurennces(arr, item) {}
+function lastItem(arr) {
+  return arr.pop();
+}
+
+const numer = [10, 20, 30];
+const result3 = lastItem(numer);
+console.log(result3);
+
+function countOccurrences(arr, item) {
+  let counter = 0;
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] === item) {
+      counter++;
+    }
+    return counter;
+  }
+}
+
+const currences = [10, 20, 30, 10, 10];
+const result4 = countOccurrences(currences, 10);
+console.log(result4);
+
+function shortestWord(str) {
+  if (shortestWord === 0) {
+  }
+}
