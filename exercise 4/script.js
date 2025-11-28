@@ -197,3 +197,23 @@ function shortestWord(str) {
 const phrase = "hello my name is same as sa";
 const result5 = shortestWord(phrase);
 console.log(result5);
+
+function findDucplicates(arr) {
+  let = duplicate = [];
+  for (i = 0; i < arr.length; i++) {
+    const num = arr[i];
+
+    for (j = 0; j < arr.length; j++) {
+      const nextNum = arr[j];
+
+      console.log("Num: ", num, "Next: ", nextNum);
+
+      if (num === nextNum) {
+        if (!duplicate.include(num)) {
+          duplicate.push(num);
+        }
+      }
+    }
+  }
+  console.log(duplicate);
+}
